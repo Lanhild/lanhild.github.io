@@ -1,0 +1,84 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans&display=swap'); 
+
+*{
+	margin: 0;
+	padding: 5px;
+}
+
+body{
+	background-color: #1b0a31;
+}
+
+#intro { 
+	font-family: 'DM Sans', sans-serif;
+	color: #c5c8c9; 
+	padding: 10px 10px 10px 10px; 
+	margin-top: 10%; 
+	margin-bottom: 10%;
+	margin-left: 15%; 
+	margin-right: 20%;
+	max-width: 600px;
+	max-height: auto;
+}
+
+#intro-text-2 { 
+	font-family: 'DM Sans', sans-serif;
+	font-size: 1.2em; 
+	line-height: 1.8rem;
+	font-weight: 410;
+	/* negative margin */
+	margin-left: 2.15rem;
+	text-align: left; 
+	display: block;
+	margin-left: auto;
+	margin-right: auto; 
+}
+
+#intro-text-2 a{ 
+	text-decoration: none;
+	color: #b924ff;  
+}
+
+/* Underline hover animation */ 
+.hover-underline-animation {
+	color: #b924ff;
+	position: relative;
+	display: inline-block;
+}
+
+.hover-underline-animation:after {
+	content: '';
+	width: 100%;
+	transform: scaleX(0);
+	position: absolute;
+	height: 2px;
+	bottom: 1px;
+	background-color: #b924ff;
+	left: 0;
+	transition: transform 0.25s ease-out;
+	transform-origin: bottom right;
+}
+
+.hover-underline-animation:hover:after {
+	transform: scaleX(1);
+	transform-origin: bottom center;
+}
+ 
+#navbar {
+	font-family: 'DM Sans', sans-serif;
+	font-style: normal;
+	background-color: #280555; 
+	text-align: right;
+	color: #c5c8c9;
+	padding-right: 20px;
+} 
+
+#navbar a:hover{ 
+	color: #b924ff;
+	text-decoration: overline;
+}
+
+#navbar a { 
+	color: #c5c9c9;
+	text-decoration: none;
+}
